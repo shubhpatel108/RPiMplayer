@@ -2,7 +2,7 @@ import os
 import time
 
 def child():
-	command = "mplayer -ao alsa -slave -input file=/tmp/pipe -quiet " + file_name
+	command = "mplayer -ao alsa -quiet -playlist playlist.m3u -slave -input file=/tmp/pipe"
 	os.system(command)
 	os._exit(0)  
 
